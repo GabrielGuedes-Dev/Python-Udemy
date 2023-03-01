@@ -13,17 +13,18 @@ ListasInteiro = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
                               ]
 
-setNumeros = set()
-primeiroNumeroDuplicado = 0
-
-for lista in ListasInteiro:
-  while len(lista) != 0:
-    if len(lista) == 0:
-      break
-    numero = lista[0]
-    if numero in setNumeros:
-      primeiroNumeroDuplicado = lista.pop(lista.index(numero))
-      print(f'O primeiro número duplicado foi {primeiroNumeroDuplicado}')
-      exit()
-    setNumeros.add(numero)
-    lista.remove(numero)
+def encontraPrimeiroDuplica (ListasInteiro):
+  setNumeros = set()
+  for lista in ListasInteiro:
+    while len(lista) != 0:
+      if len(lista) == 0:
+        break
+      numero = lista[0]
+      if numero in setNumeros:
+        primeiroNumeroDuplicado = lista.pop(lista.index(numero))
+        return(f'O primeiro número duplicado foi {primeiroNumeroDuplicado}')
+      setNumeros.add(numero)
+      lista.remove(numero)
+      
+primeiroNumeroDuplicado = encontraPrimeiroDuplica(ListasInteiro)
+print(primeiroNumeroDuplicado)
