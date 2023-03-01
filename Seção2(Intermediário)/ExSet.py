@@ -25,6 +25,7 @@ def encontraPrimeiroDuplica (ListasInteiro):
         return(f'O primeiro número duplicado foi {primeiroNumeroDuplicado}')
       setNumeros.add(numero)
       lista.remove(numero)
+      return -1
       
 primeiroNumeroDuplicado = encontraPrimeiroDuplica(ListasInteiro)
 print(primeiroNumeroDuplicado)
