@@ -25,10 +25,7 @@ def encontraPrimeiroDuplica (ListasInteiro):
         return(f'O primeiro número duplicado foi {primeiroNumeroDuplicado}')
       setNumeros.add(numero)
       lista.remove(numero)
-<<<<<<< HEAD
       return 'Nenhum número foi duplicado'
-=======
->>>>>>> parent of 3c48963 (Adicionando Tratamento, caso a condição não seja cumprida na função)
       
 primeiroNumeroDuplicado = encontraPrimeiroDuplica(ListasInteiro)
 print(primeiroNumeroDuplicado)
