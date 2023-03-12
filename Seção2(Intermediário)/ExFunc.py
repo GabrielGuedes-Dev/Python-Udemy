@@ -12,3 +12,5 @@ num = 2
 print(duplicar(num))
 print(triplicar(num))
 print(quadruplicar(num))
+
+print('Este módulo se chama', __name__)
